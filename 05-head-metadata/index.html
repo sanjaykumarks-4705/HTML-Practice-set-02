@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ================================= -->
+    <!-- CHARACTER ENCODING -->
+    <!-- ================================= -->
+
+    <!--
+        charset="UTF-8" allows the webpage
+        to display most characters and symbols
+        correctly.
+    -->
+
+    <meta charset="UTF-8">
+
+
+    <!-- ================================= -->
+    <!-- VIEWPORT -->
+    <!-- ================================= -->
+
+    <!--
+        Makes the webpage responsive on
+        mobile phones and different devices.
+    -->
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <!-- ================================= -->
+    <!-- PAGE TITLE -->
+    <!-- ================================= -->
+
+    <!--
+        title is displayed in the browser tab.
+
+        It is also important for SEO.
+    -->
+
+    <title>HTML Head and Metadata Practice</title>
+
+
+    <!-- ================================= -->
+    <!-- META DESCRIPTION -->
+    <!-- ================================= -->
+
+    <!--
+        Provides a short description
+        of the webpage.
+
+        Search engines may use this
+        description in search results.
+    -->
+
+    <meta
+        name="description"
+        content="A practice page for learning HTML head elements, metadata, links, and favicons."
+    >
+
+
+    <!-- ================================= -->
+    <!-- META KEYWORDS -->
+    <!-- ================================= -->
+
+    <!--
+        Specifies keywords related to
+        the webpage content.
+
+        Note:
+        Modern search engines generally do not
+        rely heavily on this tag for ranking.
+    -->
+
+    <meta
+        name="keywords"
+        content="HTML, HTML Practice, Web Development, Metadata"
+    >
+
+
+    <!-- ================================= -->
+    <!-- META AUTHOR -->
+    <!-- ================================= -->
+
+    <!--
+        Specifies the author of the webpage.
+    -->
+
+    <meta
+        name="author"
+        content="Sanjay Kumar"
+    >
+
+
+    <!-- ================================= -->
+    <!-- FAVICON -->
+    <!-- ================================= -->
+
+    <!--
+        A favicon is the small icon displayed
+        in the browser tab.
+
+        rel="icon" defines it as a favicon.
+
+        href specifies the location of the icon.
+    -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../assets/favicon/favicon.png"
+    >
+
+
+    <!-- ================================= -->
+    <!-- EXTERNAL CSS FILE -->
+    <!-- ================================= -->
+
+    <!--
+        link is used to connect an external
+        CSS file to the HTML document.
+
+        rel="stylesheet" tells the browser
+        that this file contains CSS.
+    -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- ================================= -->
+    <!-- INTERNAL CSS -->
+    <!-- ================================= -->
+
+    <!--
+        style is used to write CSS directly
+        inside the HTML document.
+    -->
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        .important {
+            font-weight: bold;
+        }
+
+    </style>
+
+
+    <!-- ================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================= -->
+
+    <!--
+        script is used to add JavaScript.
+
+        defer makes the script execute after
+        the HTML document has been parsed.
+    -->
+
+    <script src="script.js" defer></script>
+
+
+</head>
+
+
+<body>
+
+    <h1>HTML Head Elements Practice</h1>
+
+    <hr>
+
+
+    <h2>1. Title Tag</h2>
+
+    <p>
+        The title of this webpage is displayed
+        in the browser tab.
+    </p>
+
+
+    <h2>2. Meta Tags</h2>
+
+    <p>
+        Meta tags provide information about
+        the webpage.
+    </p>
+
+    <ul>
+        <li>Character Encoding</li>
+        <li>Viewport Settings</li>
+        <li>Page Description</li>
+        <li>Keywords</li>
+        <li>Author Information</li>
+    </ul>
+
+
+    <h2>3. Favicon</h2>
+
+    <p>
+        Check the browser tab to see the favicon.
+    </p>
+
+
+    <h2>4. External CSS</h2>
+
+    <p>
+        The external CSS file is connected using
+        the <strong>link</strong> tag.
+    </p>
+
+
+    <h2>5. Internal CSS</h2>
+
+    <p class="important">
+        This text uses a CSS class.
+    </p>
+
+
+    <h2>6. JavaScript</h2>
+
+    <p>
+        The JavaScript file is connected using
+        the script tag.
+    </p>
+
+
+</body>
+
+</html>

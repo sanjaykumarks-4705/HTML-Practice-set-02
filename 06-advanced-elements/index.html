@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Advanced HTML Elements</title>
+
+</head>
+
+
+<body>
+
+    <h1>Advanced HTML Elements Practice</h1>
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- DETAILS AND SUMMARY -->
+    <!-- ================================= -->
+
+    <!--
+        details = Creates expandable content.
+
+        summary = Creates the visible heading
+        that users click to open or close content.
+    -->
+
+    <h2>1. Details and Summary</h2>
+
+    <details>
+
+        <summary>
+            What is HTML?
+        </summary>
+
+        <p>
+            HTML stands for HyperText Markup Language.
+            It is used to create the structure of webpages.
+        </p>
+
+    </details>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- OPEN ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        open = Keeps the details element
+        open by default.
+    -->
+
+    <h2>2. Details with Open Attribute</h2>
+
+    <details open>
+
+        <summary>
+            Click to hide this information
+        </summary>
+
+        <p>
+            This details element is open by default.
+        </p>
+
+    </details>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- PROGRESS -->
+    <!-- ================================= -->
+
+    <!--
+        progress = Shows the progress
+        of a task.
+
+        value = Current progress.
+
+        max = Maximum value.
+    -->
+
+    <h2>3. Progress Bar</h2>
+
+    <p>HTML Course Progress:</p>
+
+    <progress value="70" max="100">
+        70%
+    </progress>
+
+    <p>
+        Course completion: 70%
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- METER -->
+    <!-- ================================= -->
+
+    <!--
+        meter = Represents a measurement
+        within a known range.
+
+        min = Minimum value.
+
+        max = Maximum value.
+
+        value = Current value.
+    -->
+
+    <h2>4. Meter Element</h2>
+
+    <p>Student Performance:</p>
+
+    <meter
+        min="0"
+        max="100"
+        value="85"
+    >
+        85 out of 100
+    </meter>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- LOW, HIGH AND OPTIMUM -->
+    <!-- ================================= -->
+
+    <!--
+        low = Defines a low value.
+
+        high = Defines a high value.
+
+        optimum = Defines the ideal value.
+    -->
+
+    <h2>5. Advanced Meter</h2>
+
+    <p>Battery Level:</p>
+
+    <meter
+        min="0"
+        max="100"
+        low="20"
+        high="80"
+        optimum="100"
+        value="75"
+    >
+        75%
+    </meter>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- OUTPUT -->
+    <!-- ================================= -->
+
+    <!--
+        output = Displays the result
+        of a calculation or action.
+
+        Usually used with forms and JavaScript.
+    -->
+
+    <h2>6. Output Element</h2>
+
+    <form
+        oninput="result.value = Number(num1.value) + Number(num2.value)"
+    >
+
+        <input
+            type="number"
+            id="num1"
+            value="0"
+        >
+
+        +
+
+        <input
+            type="number"
+            id="num2"
+            value="0"
+        >
+
+        =
+
+        <output
+            name="result"
+            for="num1 num2"
+        >
+            0
+        </output>
+
+    </form>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- DIALOG -->
+    <!-- ================================= -->
+
+    <!--
+        dialog = Creates a dialog box.
+
+        The open attribute makes it visible.
+    -->
+
+    <h2>7. Dialog Element</h2>
+
+    <dialog open>
+
+        <h3>Welcome!</h3>
+
+        <p>
+            This is an HTML dialog box.
+        </p>
+
+    </dialog>
+
+    <br><br><br><br><br><br>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- TEMPLATE -->
+    <!-- ================================= -->
+
+    <!--
+        template = Holds HTML content that
+        is not displayed immediately.
+
+        It can later be used with JavaScript.
+    -->
+
+    <h2>8. Template Element</h2>
+
+    <template>
+
+        <div>
+
+            <h3>Hidden Template</h3>
+
+            <p>
+                This content is stored inside
+                a template and is not displayed.
+            </p>
+
+        </div>
+
+    </template>
+
+    <p>
+        The template content above is not
+        directly visible in the webpage.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- NOSCRIPT -->
+    <!-- ================================= -->
+
+    <!--
+        noscript displays content when
+        JavaScript is disabled in the browser.
+    -->
+
+    <h2>9. Noscript Element</h2>
+
+    <noscript>
+
+        <p>
+            JavaScript is disabled in your browser.
+        </p>
+
+    </noscript>
+
+    <p>
+        Enable JavaScript for the best experience.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- WBR -->
+    <!-- ================================= -->
+
+    <!--
+        wbr = Word Break Opportunity.
+
+        It tells the browser where it can
+        optionally break a long word.
+    -->
+
+    <h2>10. WBR Element</h2>
+
+    <p>
+        HyperText<wbr>Markup<wbr>Language
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- BDI -->
+    <!-- ================================= -->
+
+    <!--
+        bdi = Bi-Directional Isolation.
+
+        It isolates text that may have
+        a different text direction.
+    -->
+
+    <h2>11. BDI Element</h2>
+
+    <p>
+        Username:
+        <bdi>Sanjay</bdi>
+    </p>
+
+    <p>
+        Username:
+        <bdi>مستخدم</bdi>
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- BDO -->
+    <!-- ================================= -->
+
+    <!--
+        bdo = Bi-Directional Override.
+
+        dir="rtl" displays text
+        from right to left.
+
+        dir="ltr" displays text
+        from left to right.
+    -->
+
+    <h2>12. BDO Element</h2>
+
+    <p>
+        Normal Text: HTML Practice
+    </p>
+
+    <p>
+
+        Reversed Direction:
+
+        <bdo dir="rtl">
+            HTML Practice
+        </bdo>
+
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- DATA ELEMENT -->
+    <!-- ================================= -->
+
+    <!--
+        data = Connects human-readable content
+        with a machine-readable value.
+    -->
+
+    <h2>13. Data Element</h2>
+
+    <p>
+
+        Product:
+
+        <data value="101">
+            Laptop
+        </data>
+
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- TIME ELEMENT -->
+    <!-- ================================= -->
+
+    <!--
+        time = Represents a specific
+        date or time.
+
+        datetime provides a machine-readable value.
+    -->
+
+    <h2>14. Time Element</h2>
+
+    <p>
+
+        Today is:
+
+        <time datetime="2026-09-02">
+            September 2, 2026
+        </time>
+
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- COMPLETE ADVANCED EXAMPLE -->
+    <!-- ================================= -->
+
+    <h2>15. Complete Example</h2>
+
+    <section>
+
+        <h3>My HTML Learning Progress</h3>
+
+        <p>
+            Course Progress:
+        </p>
+
+        <progress value="80" max="100">
+            80%
+        </progress>
+
+
+        <p>
+            Performance:
+        </p>
+
+        <meter
+            min="0"
+            max="100"
+            value="90"
+        >
+            90%
+        </meter>
+
+
+        <details>
+
+            <summary>
+                View Learning Details
+            </summary>
+
+            <p>
+                I have completed HTML basics,
+                text formatting, links, images,
+                lists, tables, forms, semantic HTML,
+                media, metadata, and advanced elements.
+            </p>
+
+        </details>
+
+    </section>
+
+
+</body>
+
+</html>

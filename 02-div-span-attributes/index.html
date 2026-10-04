@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>Div, Span and Global Attributes</title>
+</head>
+
+<body>
+
+    <h1>HTML Div, Span and Global Attributes</h1>
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- DIV TAG -->
+    <!-- ================================= -->
+
+    <!--
+        div = A block-level container.
+
+        It is commonly used to group HTML elements
+        together for styling or JavaScript.
+    -->
+
+    <h2>1. Div Tag</h2>
+
+    <div>
+        <h3>About Me</h3>
+
+        <p>
+            My name is Sanjay. I am learning
+            Full Stack Web Development.
+        </p>
+    </div>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- DIV WITH STYLE -->
+    <!-- ================================= -->
+
+    <!--
+        style attribute adds inline CSS
+        directly to an HTML element.
+    -->
+
+    <h2>2. Div with Inline Style</h2>
+
+    <div style="border: 2px solid black; padding: 15px;">
+
+        <h3>Web Development</h3>
+
+        <p>
+            HTML is used to structure webpages.
+        </p>
+
+    </div>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- SPAN TAG -->
+    <!-- ================================= -->
+
+    <!--
+        span = An inline container.
+
+        It is commonly used to style or select
+        a small part of text.
+    -->
+
+    <h2>3. Span Tag</h2>
+
+    <p>
+        I am learning
+        <span>HTML</span>,
+        <span>CSS</span>, and
+        <span>JavaScript</span>.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- SPAN WITH STYLE -->
+    <!-- ================================= -->
+
+    <h2>4. Span with Inline Style</h2>
+
+    <p>
+        My favorite programming language is
+
+        <span style="font-weight: bold;">
+            Java
+        </span>.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- ID ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        id = A unique identifier.
+
+        An ID should normally be unique
+        within a webpage.
+    -->
+
+    <h2>5. ID Attribute</h2>
+
+    <div id="profile">
+
+        <h3>Student Profile</h3>
+
+        <p>
+            This div has the ID "profile".
+        </p>
+
+    </div>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- CLASS ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        class = Used to group multiple elements.
+
+        Multiple elements can have the same class.
+    -->
+
+    <h2>6. Class Attribute</h2>
+
+    <div class="student">
+
+        <h3>Sanjay</h3>
+
+        <p>Learning HTML</p>
+
+    </div>
+
+
+    <div class="student">
+
+        <h3>Arun</h3>
+
+        <p>Learning CSS</p>
+
+    </div>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- MULTIPLE CLASSES -->
+    <!-- ================================= -->
+
+    <!--
+        An element can have multiple classes.
+
+        Separate class names using spaces.
+    -->
+
+    <h2>7. Multiple Classes</h2>
+
+    <p class="student active">
+        This paragraph has two classes.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- TITLE ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        title = Provides additional information.
+
+        Usually displayed when the user
+        hovers over an element.
+    -->
+
+    <h2>8. Title Attribute</h2>
+
+    <p title="This is additional information">
+        Hover your mouse over this text.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- HIDDEN ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        hidden = Hides an element from display.
+    -->
+
+    <h2>9. Hidden Attribute</h2>
+
+    <p hidden>
+        You cannot see this paragraph.
+    </p>
+
+    <p>
+        The paragraph above exists in the HTML
+        but is hidden.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- DATA ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        data-* = Used to store custom data
+        inside an HTML element.
+
+        These attributes are commonly accessed
+        using JavaScript.
+    -->
+
+    <h2>10. Data Attribute</h2>
+
+    <div
+        data-user-id="101"
+        data-course="HTML"
+    >
+
+        Student Information
+
+    </div>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- CONTENTEDITABLE ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        contenteditable = Allows users to edit
+        the content directly in the browser.
+    -->
+
+    <h2>11. Contenteditable Attribute</h2>
+
+    <p contenteditable="true">
+
+        Click here and edit this text.
+
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- DRAGGABLE ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        draggable = Allows an element to be dragged.
+
+        true  = Element can be dragged
+        false = Element cannot be dragged
+    -->
+
+    <h2>12. Draggable Attribute</h2>
+
+    <p draggable="true">
+
+        Try dragging this text.
+
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- TABINDEX ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        tabindex controls keyboard navigation.
+
+        tabindex="0" allows the element
+        to receive keyboard focus.
+    -->
+
+    <h2>13. Tabindex Attribute</h2>
+
+    <p tabindex="0">
+
+        Click here or press Tab to focus this text.
+
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- LANG ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        lang specifies the language
+        of the document.
+
+        Example:
+        <html lang="en">
+    -->
+
+    <h2>14. Lang Attribute</h2>
+
+    <p>
+        The webpage language is defined using
+        the lang attribute in the html tag.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- DIR ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        dir specifies the text direction.
+
+        ltr = Left to Right
+        rtl = Right to Left
+    -->
+
+    <h2>15. Direction Attribute</h2>
+
+    <p dir="ltr">
+        This text is displayed from left to right.
+    </p>
+
+    <p dir="rtl">
+        This text is displayed from right to left.
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- SPELLCHECK ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        spellcheck checks spelling
+        while editing text.
+    -->
+
+    <h2>16. Spellcheck Attribute</h2>
+
+    <p contenteditable="true" spellcheck="true">
+
+        Edit this text and check the spelling.
+
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- TRANSLATE ATTRIBUTE -->
+    <!-- ================================= -->
+
+    <!--
+        translate indicates whether an element's
+        content should be translated.
+
+        yes = Can be translated
+        no  = Should not be translated
+    -->
+
+    <h2>17. Translate Attribute</h2>
+
+    <p translate="no">
+        HTML
+    </p>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- COMPLETE EXAMPLE -->
+    <!-- ================================= -->
+
+    <h2>18. Complete Example</h2>
+
+    <div
+        id="student-card"
+        class="student active"
+        title="Student Profile Card"
+        data-student-id="101"
+        style="border: 1px solid black; padding: 15px;"
+    >
+
+        <h3>
+            Sanjay Kumar
+        </h3>
+
+        <p>
+            Learning
+            <span style="font-weight: bold;">
+                Full Stack Development
+            </span>.
+        </p>
+
+        <p contenteditable="true">
+            Click here to edit your learning goal.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

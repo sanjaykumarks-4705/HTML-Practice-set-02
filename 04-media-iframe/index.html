@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>HTML Media and Iframe</title>
+</head>
+
+<body>
+
+    <h1>HTML Media and Iframe Practice</h1>
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- IFRAME -->
+    <!-- ================================= -->
+
+    <!--
+        iframe is used to embed another webpage
+        or external content inside the current webpage.
+
+        src = Specifies the URL of the content.
+
+        width and height = Set the iframe size.
+
+        title = Provides a description for accessibility.
+    -->
+
+    <h2>1. Basic Iframe</h2>
+
+    <iframe
+        src="https://example.com"
+        width="600"
+        height="300"
+        title="Example Website">
+    </iframe>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- YOUTUBE VIDEO USING IFRAME -->
+    <!-- ================================= -->
+
+    <!--
+        YouTube videos can be embedded using iframe.
+
+        Note:
+        Use the embed URL provided by YouTube.
+    -->
+
+    <h2>2. Embedded YouTube Video</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="YouTube Video"
+        allowfullscreen>
+    </iframe>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- BASIC AUDIO -->
+    <!-- ================================= -->
+
+    <!--
+        audio = Used to add audio to a webpage.
+
+        controls = Displays play, pause,
+                   volume, and other controls.
+    -->
+
+    <h2>3. Basic Audio</h2>
+
+    <audio controls>
+
+        <source
+            src="../assets/audio/sample.mp3"
+            type="audio/mpeg"
+        >
+
+        Your browser does not support the audio element.
+
+    </audio>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- AUDIO WITH MULTIPLE SOURCES -->
+    <!-- ================================= -->
+
+    <!--
+        Multiple source formats can be provided
+        for better browser compatibility.
+    -->
+
+    <h2>4. Audio with Multiple Sources</h2>
+
+    <audio controls>
+
+        <source
+            src="../assets/audio/sample.mp3"
+            type="audio/mpeg"
+        >
+
+        <source
+            src="../assets/audio/sample.ogg"
+            type="audio/ogg"
+        >
+
+        Your browser does not support audio.
+
+    </audio>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- AUDIO ATTRIBUTES -->
+    <!-- ================================= -->
+
+    <!--
+        autoplay = Starts playing automatically.
+
+        loop = Repeats the audio.
+
+        muted = Starts the audio without sound.
+
+        Note:
+        Modern browsers may block autoplay
+        unless the media is muted.
+    -->
+
+    <h2>5. Audio Attributes</h2>
+
+    <audio controls loop muted>
+
+        <source
+            src="../assets/audio/sample.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- BASIC VIDEO -->
+    <!-- ================================= -->
+
+    <!--
+        video = Used to display videos.
+
+        controls = Displays video controls.
+
+        width = Sets the width of the video.
+    -->
+
+    <h2>6. Basic Video</h2>
+
+    <video width="600" controls>
+
+        <source
+            src="../assets/videos/sample.mp4"
+            type="video/mp4"
+        >
+
+        Your browser does not support the video element.
+
+    </video>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- VIDEO WITH MULTIPLE SOURCES -->
+    <!-- ================================= -->
+
+    <!--
+        Multiple video formats can be provided
+        for better browser compatibility.
+    -->
+
+    <h2>7. Video with Multiple Sources</h2>
+
+    <video width="600" controls>
+
+        <source
+            src="../assets/videos/sample.mp4"
+            type="video/mp4"
+        >
+
+        <source
+            src="../assets/videos/sample.webm"
+            type="video/webm"
+        >
+
+        Your browser does not support video.
+
+    </video>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- VIDEO ATTRIBUTES -->
+    <!-- ================================= -->
+
+    <!--
+        autoplay = Starts the video automatically.
+
+        loop = Repeats the video.
+
+        muted = Starts without sound.
+
+        poster = Displays an image before
+                 the video starts.
+
+        controls = Shows video controls.
+    -->
+
+    <h2>8. Video Attributes</h2>
+
+    <video
+        width="600"
+        controls
+        muted
+        loop
+        poster="../assets/images/sample.jpg"
+    >
+
+        <source
+            src="../assets/videos/sample.mp4"
+            type="video/mp4"
+        >
+
+        Your browser does not support the video element.
+
+    </video>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- AUTOPLAY VIDEO -->
+    <!-- ================================= -->
+
+    <!--
+        Most browsers allow autoplay
+        when the video is muted.
+    -->
+
+    <h2>9. Autoplay Video</h2>
+
+    <video
+        width="600"
+        autoplay
+        muted
+        loop
+    >
+
+        <source
+            src="../assets/videos/sample.mp4"
+            type="video/mp4"
+        >
+
+    </video>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- COMPLETE MEDIA EXAMPLE -->
+    <!-- ================================= -->
+
+    <h2>10. Complete Media Example</h2>
+
+    <h3>Audio Example</h3>
+
+    <audio controls>
+
+        <source
+            src="../assets/audio/sample.mp3"
+            type="audio/mpeg"
+        >
+
+        Audio is not supported by your browser.
+
+    </audio>
+
+
+    <br><br>
+
+
+    <h3>Video Example</h3>
+
+    <video
+        width="600"
+        controls
+        poster="../assets/images/sample.jpg"
+    >
+
+        <source
+            src="../assets/videos/sample.mp4"
+            type="video/mp4"
+        >
+
+        Video is not supported by your browser.
+
+    </video>
+
+
+</body>
+
+</html>

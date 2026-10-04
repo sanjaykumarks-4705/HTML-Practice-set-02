@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in the browser tab -->
+    <title>Semantic HTML Practice</title>
+</head>
+
+<body>
+
+    <!-- ================================= -->
+    <!-- HEADER -->
+    <!-- ================================= -->
+
+    <!--
+        header represents introductory content
+        or the top section of a webpage.
+    -->
+
+    <header>
+
+        <h1>My HTML Practice Website</h1>
+
+        <p>
+            Learning HTML step by step.
+        </p>
+
+    </header>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- NAVIGATION -->
+    <!-- ================================= -->
+
+    <!--
+        nav contains important navigation links.
+    -->
+
+    <nav>
+
+        <a href="#home">Home</a> |
+
+        <a href="#about">About</a> |
+
+        <a href="#courses">Courses</a> |
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- MAIN -->
+    <!-- ================================= -->
+
+    <!--
+        main contains the primary content
+        of the webpage.
+
+        A webpage should normally have
+        only one main element.
+    -->
+
+    <main>
+
+
+        <!-- ============================= -->
+        <!-- SECTION -->
+        <!-- ============================= -->
+
+        <!--
+            section groups related content.
+        -->
+
+        <section id="home">
+
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to my HTML practice website.
+                Here I am learning important HTML concepts.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ============================= -->
+        <!-- ARTICLE -->
+        <!-- ============================= -->
+
+        <!--
+            article represents independent,
+            self-contained content.
+
+            Examples:
+            Blog post
+            News article
+            Forum post
+        -->
+
+        <article>
+
+            <h2>Learning HTML</h2>
+
+            <p>
+                HTML is the foundation of web development.
+                It is used to structure the content of webpages.
+            </p>
+
+            <!-- Time represents a date or time -->
+            <p>
+
+                Published on:
+
+                <time datetime="2026-09-02">
+                    September 2, 2026
+                </time>
+
+            </p>
+
+        </article>
+
+
+        <hr>
+
+
+        <!-- ============================= -->
+        <!-- ANOTHER SECTION -->
+        <!-- ============================= -->
+
+        <section id="courses">
+
+            <h2>Courses I Am Learning</h2>
+
+            <ul>
+
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+
+            </ul>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ============================= -->
+        <!-- ASIDE -->
+        <!-- ============================= -->
+
+        <!--
+            aside contains related but secondary
+            content.
+
+            Examples:
+            Sidebar
+            Related links
+            Advertisements
+        -->
+
+        <aside>
+
+            <h3>Related Topics</h3>
+
+            <ul>
+
+                <li>HTML Basics</li>
+                <li>CSS Styling</li>
+                <li>JavaScript</li>
+
+            </ul>
+
+        </aside>
+
+
+        <hr>
+
+
+        <!-- ============================= -->
+        <!-- FIGURE AND FIGCAPTION -->
+        <!-- ============================= -->
+
+        <!--
+            figure represents self-contained content
+            such as an image, diagram, or illustration.
+
+            figcaption provides a caption
+            for the figure.
+        -->
+
+        <figure>
+
+            <img
+                src="../assets/images/sample.jpg"
+                alt="Web Development Example"
+                width="300"
+            >
+
+            <figcaption>
+                Example image used in HTML practice.
+            </figcaption>
+
+        </figure>
+
+
+        <hr>
+
+
+        <!-- ============================= -->
+        <!-- DETAILS AND SUMMARY -->
+        <!-- ============================= -->
+
+        <!--
+            details creates expandable content.
+
+            summary provides the visible heading
+            that users click.
+        -->
+
+        <details>
+
+            <summary>
+                Click to learn about HTML
+            </summary>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                It is used to create the structure of webpages.
+            </p>
+
+        </details>
+
+
+        <hr>
+
+
+        <!-- ============================= -->
+        <!-- MARK AND TIME -->
+        <!-- ============================= -->
+
+        <section id="about">
+
+            <h2>About My Learning Journey</h2>
+
+            <p>
+                I started learning
+                <mark>Web Development</mark>
+                in <time datetime="2026">2026</time>.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- FOOTER -->
+    <!-- ================================= -->
+
+    <!--
+        footer contains information about
+        the webpage or website.
+
+        Examples:
+        Copyright
+        Contact information
+        Links
+    -->
+
+    <footer id="contact">
+
+        <p>
+             2026 Sanjay Kumar
+        </p>
+
+        <p>
+            HTML Practice Repository
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:example@gmail.com">
+                example@gmail.com
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

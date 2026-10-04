@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive viewport -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- Page title -->
+    <title>HTML Accessibility and Best Practices</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================= -->
+    <!-- SKIP LINK -->
+    <!-- ================================= -->
+
+    <!--
+        A skip link helps keyboard users
+        quickly move to the main content.
+    -->
+
+    <a href="#main-content">
+        Skip to main content
+    </a>
+
+
+    <!-- ================================= -->
+    <!-- SEMANTIC HEADER -->
+    <!-- ================================= -->
+
+    <!--
+        Using semantic elements improves
+        accessibility and code readability.
+    -->
+
+    <header>
+
+        <h1>HTML Accessibility Practice</h1>
+
+        <p>
+            Learning how to create accessible webpages.
+        </p>
+
+    </header>
+
+
+    <!-- ================================= -->
+    <!-- NAVIGATION -->
+    <!-- ================================= -->
+
+    <!--
+        nav is used for navigation links.
+    -->
+
+    <nav aria-label="Main Navigation">
+
+        <a href="#images">Images</a> |
+
+        <a href="#forms">Forms</a> |
+
+        <a href="#buttons">Buttons</a>
+
+    </nav>
+
+
+    <hr>
+
+
+    <!-- ================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ================================= -->
+
+    <main id="main-content">
+
+
+        <!-- ================================= -->
+        <!-- ALT ATTRIBUTE -->
+        <!-- ================================= -->
+
+        <!--
+            alt provides alternative text
+            for an image.
+
+            Screen readers can read this text.
+
+            Important images should have
+            meaningful alt text.
+        -->
+
+        <section id="images">
+
+            <h2>1. Accessible Images</h2>
+
+
+            <!-- Meaningful image -->
+
+            <img
+                src="../assets/images/html-logo.png"
+                alt="HTML5 logo"
+                width="200"
+            >
+
+
+            <!--
+                Decorative images can use
+                an empty alt attribute.
+            -->
+
+            <img
+                src="../assets/images/decorative-line.png"
+                alt=""
+            >
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- PROPER HEADING STRUCTURE -->
+        <!-- ================================= -->
+
+        <!--
+            Use headings in logical order.
+
+            h1 → h2 → h3
+
+            Avoid skipping heading levels
+            unnecessarily.
+        -->
+
+        <section>
+
+            <h2>2. Proper Heading Structure</h2>
+
+            <h3>HTML Basics</h3>
+
+            <p>
+                Learn the basic structure of HTML.
+            </p>
+
+            <h3>HTML Forms</h3>
+
+            <p>
+                Learn how to collect user information.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- ACCESSIBLE FORM -->
+        <!-- ================================= -->
+
+        <!--
+            Every important form input
+            should have a proper label.
+
+            The "for" attribute connects
+            the label to the input ID.
+        -->
+
+        <section id="forms">
+
+            <h2>3. Accessible Form</h2>
+
+            <form>
+
+
+                <!-- Name -->
+
+                <label for="fullname">
+                    Full Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required
+                >
+
+
+                <br><br>
+
+
+                <!-- Email -->
+
+                <label for="email">
+                    Email Address:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+
+                <br><br>
+
+
+                <!-- Password -->
+
+                <label for="password">
+                    Password:
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                >
+
+
+                <br><br>
+
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- ARIA-LABEL -->
+        <!-- ================================= -->
+
+        <!--
+            aria-label provides an accessible
+            name when visible text is not enough.
+        -->
+
+        <section>
+
+            <h2>4. aria-label</h2>
+
+
+            <!-- Button with an accessible label -->
+
+            <button aria-label="Close window">
+                X
+            </button>
+
+
+            <br><br>
+
+
+            <!-- Input with aria-label -->
+
+            <input
+                type="search"
+                aria-label="Search website"
+                placeholder="Search"
+            >
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- ARIA-LABELLEDBY -->
+        <!-- ================================= -->
+
+        <!--
+            aria-labelledby connects an element
+            to another element that provides
+            its accessible name.
+        -->
+
+        <section>
+
+            <h2 id="profile-heading">
+                5. Student Profile
+            </h2>
+
+            <div aria-labelledby="profile-heading">
+
+                <p>
+                    Name: Sanjay Kumar
+                </p>
+
+                <p>
+                    Course: Web Development
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- ARIA-DESCRIBEDBY -->
+        <!-- ================================= -->
+
+        <!--
+            aria-describedby connects an input
+            to additional descriptive text.
+        -->
+
+        <section>
+
+            <h2>6. aria-describedby</h2>
+
+            <label for="username">
+                Username:
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                aria-describedby="username-help"
+            >
+
+            <p id="username-help">
+                Username must contain at least 4 characters.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- BUTTON ACCESSIBILITY -->
+        <!-- ================================= -->
+
+        <section id="buttons">
+
+            <h2>7. Accessible Buttons</h2>
+
+
+            <!-- Good: Button clearly describes its action -->
+
+            <button>
+                Save Profile
+            </button>
+
+
+            <button>
+                Delete Account
+            </button>
+
+
+            <!--
+                Avoid unclear button text such as:
+                "Click Here"
+            -->
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- KEYBOARD ACCESSIBILITY -->
+        <!-- ================================= -->
+
+        <!--
+            Users should be able to navigate
+            important interactive elements
+            using the keyboard.
+
+            Native elements such as buttons
+            and links already support this.
+        -->
+
+        <section>
+
+            <h2>8. Keyboard Accessibility</h2>
+
+            <p>
+                Try pressing the Tab key to move
+                between links, inputs, and buttons.
+            </p>
+
+
+            <a href="#top">
+                Example Link
+            </a>
+
+            <br><br>
+
+            <button>
+                Example Button
+            </button>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- TABINDEX -->
+        <!-- ================================= -->
+
+        <!--
+            tabindex="0" makes a normally
+            non-focusable element focusable.
+
+            Avoid using positive tabindex values
+            like tabindex="1" unless necessary.
+        -->
+
+        <section>
+
+            <h2>9. Tabindex</h2>
+
+            <p tabindex="0">
+                This paragraph can receive keyboard focus.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- TABLE ACCESSIBILITY -->
+        <!-- ================================= -->
+
+        <!--
+            Use caption and scope attributes
+            to make tables easier to understand
+            for screen reader users.
+        -->
+
+        <section>
+
+            <h2>10. Accessible Table</h2>
+
+            <table border="1">
+
+                <caption>
+                    Student Marks
+                </caption>
+
+                <thead>
+
+                    <tr>
+
+                        <th scope="col">
+                            Name
+                        </th>
+
+                        <th scope="col">
+                            HTML
+                        </th>
+
+                        <th scope="col">
+                            CSS
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <th scope="row">
+                            Sanjay
+                        </th>
+
+                        <td>90</td>
+
+                        <td>85</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- LANGUAGE ATTRIBUTE -->
+        <!-- ================================= -->
+
+        <!--
+            The lang attribute helps screen readers
+            pronounce content correctly.
+        -->
+
+        <section>
+
+            <h2>11. Language Attribute</h2>
+
+            <p>
+                The main document language is:
+                English.
+            </p>
+
+            <p lang="fr">
+                Bonjour
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================================= -->
+        <!-- COMPLETE ACCESSIBLE EXAMPLE -->
+        <!-- ================================= -->
+
+        <section>
+
+            <h2>12. Complete Accessible Example</h2>
+
+            <article>
+
+                <h3>
+                    Learn Web Development
+                </h3>
+
+                <img
+                    src="../assets/images/web-development.jpg"
+                    alt="A person working on web development using a laptop"
+                    width="300"
+                >
+
+                <p>
+                    Start learning HTML, CSS,
+                    JavaScript, and React step by step.
+                </p>
+
+                <button aria-label="Start learning web development">
+                    Start Learning
+                </button>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================================= -->
+    <!-- FOOTER -->
+    <!-- ================================= -->
+
+    <footer>
+
+        <hr>
+
+        <p>
+            2026 HTML Practice Repository
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

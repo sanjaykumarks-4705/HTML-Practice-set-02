@@ -4,7 +4,6 @@ This repository contains my HTML practice programs with comments explaining HTML
 
 ## Completed Topics
 
-
 ### Part 1 - Quotations and HTML Entities
 
 - Short Quotations (`q`)
